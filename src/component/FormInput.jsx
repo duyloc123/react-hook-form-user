@@ -12,7 +12,6 @@ function FormInput({
     setChangeEvent(true);
     const newRegister = {
       data: {
-        _id: Math.floor(Math.random() * 1000),
         avatar: "https://cdn.fakercloud.com/avatars/ManikRathee_128.jpg",
         firstName: dataUser["first_name"],
         lastName: dataUser["last_name"],
@@ -40,7 +39,7 @@ function FormInput({
     setUser((prevState) => {
       return [...prevState, data];
     });
-      setChangeEvent(false);
+    setChangeEvent(false);
   }
   return (
     <>

@@ -52,7 +52,7 @@ function FormList({ user, setUser, DeleteUser, UpdateUser, changeEvent, currentP
             <tbody>
               {/* Loading */}
               {loading ? ((user.map(item => (
-                <tr className="bg-white border-b" key={item._id}>
+                <tr key={item._id} className="bg-white border-b">
                   <td className="py-4 px-3">{item.firstName}</td>
                   <td className="py-4 px-6">{item.lastName}</td>
                   <td className="py-4 px-6">{item.email}</td>
