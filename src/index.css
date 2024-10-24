@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.loading{
+    transform: translate(calc(100% / 2), calc(100% / 2));
+}
